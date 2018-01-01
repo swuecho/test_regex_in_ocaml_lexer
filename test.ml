@@ -10,7 +10,7 @@ let loop filename () =
   In_channel.close inx
 
 let () =
-  Command.basic ~summary:"Parse and display"
+  Command.basic ~summary:"find the matched text (i.e. test regex) "
     Command.Spec.(empty +> anon ("filename" %: file))
     loop
   |> Command.run
