@@ -1,7 +1,7 @@
 
 o:= test.ml
 
-bin= $(subst .ml,.exe,${o})
+bin= $(subst .ml,.bc,${o})
 
 all: build run
 
